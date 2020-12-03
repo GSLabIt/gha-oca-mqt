@@ -4,7 +4,8 @@ if [ ! -z "$GITHUB_WORKSPACE" ]
 then
     export TRAVIS_BUILD_DIR=${GITHUB_WORKSPACE}
 fi
-git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+
+git clone -b ooops-makepot --depth=1 https://github.com/GSLabIt/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
 export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
 travis_install_nightly
 git config --global user.email "gha@oca.mqt"
