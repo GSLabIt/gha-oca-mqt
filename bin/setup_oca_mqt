@@ -8,6 +8,7 @@ fi
 git clone -b ooops-makepot --depth=1 https://github.com/GSLabIt/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
 export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
 travis_install_nightly
-git config --global user.email "gha@oca.mqt"
-git config --global user.name "GHA OCA MQT"
-merge_prs
+git config --global user.email "giovanni@gslab.it"
+git config --global user.name "Giovanni"
+travis_run_tests
+travis_after_tests_success || true
