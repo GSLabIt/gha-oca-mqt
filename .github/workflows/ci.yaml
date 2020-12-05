@@ -14,6 +14,6 @@ jobs:
       matrix:
         version: ["10.0", "12.0"]
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: ${{ matrix.version }}
         run: docker build -f ${{ matrix.version }}/Dockerfile . -t gha-oca-mqt:${{ matrix.version }}

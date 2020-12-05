@@ -1,4 +1,4 @@
-FROM python:3.6-slim-stretch
+FROM python:3.6-slim-buster
 
 RUN mkdir -p /usr/share/man/man1
 RUN mkdir -p /usr/share/man/man7
