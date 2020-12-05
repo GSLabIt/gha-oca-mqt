@@ -21,7 +21,7 @@ ENV TESTS 1
 ENV ODOO_REPO "odoo/odoo"
 ENV VERSION "12.0"
 COPY /bin/* /usr/local/bin/
-LABEL maintainer="Studio73" \
-        org.label-schema.vendor="Studio73" \
-        org.label-schema.url="https://www.studio73.es" \
-        org.label-schema.vcs-url="https://github.com/Studio73/gha-oca-mqt"
+LABEL maintainer="GSLabIt" \
+        org.label-schema.vendor="GSLabIt" \
+        org.label-schema.url="https://www.gslab.it" \
+        org.label-schema.vcs-url="https://github.com/GSLabIt/gha-oca-mqt"
